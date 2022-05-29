@@ -7,31 +7,6 @@ navToggle?.addEventListener('click', () => {
     navToggle.classList.toggle('close');
     navItem?.classList.toggle('hide');
 });
-const rippleButtons = document.querySelectorAll('button.ripple-button');
-const rippleButtonLinks = document.querySelectorAll('a.ripple-button');
-for (const rippleButtonLink of rippleButtonLinks) {
-    rippleButtonLink.addEventListener('click', rippleButtonHandler);
-}
-for (const rippleButton of rippleButtons) {
-    rippleButton.addEventListener('click', rippleButtonHandler);
-}
-function rippleButtonHandler(e) {
-    if (this.getElementsByClassName('ripple').length > 0) {
-        setTimeout(() => {
-            if (this.childNodes.length > 1) {
-                this.removeChild(this.childNodes[1]);
-                this.removeChild(this.childNodes[1]);
-            }
-        }, 600);
-    }
-    const circle = document.createElement('div');
-    this.appendChild(circle);
-    const d = Math.max(this.clientWidth, this.clientHeight);
-    circle.style.width = circle.style.height = d + 'px';
-    circle.style.left = e.clientX - this.offsetLeft - d / 2 + 'px';
-    circle.style.top = e.clientY - this.offsetTop - d / 2 - 10 + 'px';
-    circle.classList.add('ripple');
-}
 // Handle scroll to element with id href value
 const localLinks = document.querySelectorAll('.local-link');
 for (const localLink of localLinks) {

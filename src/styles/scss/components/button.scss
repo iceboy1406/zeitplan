@@ -1,5 +1,6 @@
 @use '../color';
 .primary-button {
+  text-align: center;
   display: block;
   padding: 16px 48px;
   width: fit-content;
@@ -13,8 +14,9 @@
   }
 }
 .secondary-button {
-
   padding: 16px 48px;
+  display: block;
+  text-align: center;
   width: fit-content;
   background-color: rgba(color.$primary, 0.1);
   border: 1px solid rgba(color.$primary, 0.2);
@@ -24,24 +26,5 @@
   font-size: 16px;
   &:hover {
     background-color: rgba(color.$primary, 0.25);
-  }
-}
-
-.ripple-button {
-  position: relative;
-  overflow: hidden;
-  .ripple {
-    border-radius: 50%;
-    background-color: rgba(color.$white, 0.45);
-    position: absolute;
-    transform: scale(0);
-    animation: ripple 0.6s linear;
-  }
-
-  @keyframes ripple {
-    to {
-      transform: scale(2.5);
-      opacity: 0;
-    }
   }
 }
