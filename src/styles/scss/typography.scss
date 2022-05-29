@@ -1,0 +1,47 @@
+@use 'color';
+
+.banner-title {
+  font-family: 'PatuaOne';
+  font-size: 40px;
+  font-weight: normal;
+  color: color.$dark;
+  line-height: normal;
+  margin: 0;
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+.section-title {
+  font-family: 'PatuaOne';
+  font-size: 36px;
+  font-weight: normal;
+  color: color.$dark;
+  line-height: 52px;
+  margin: 0;
+}
+.section-description,
+.banner-description {
+  font-family: 'SourceSansPro';
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(color.$dark, 0.5);
+  line-height: 32px;
+  margin: 0;
+}
+.section-description-small {
+  font-family: 'SourceSansPro';
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(color.$dark, 0.6);
+  line-height: 32px;
+  margin: 0;
+}
+.section-subtitle {
+  font-family: 'SourceSansPro';
+  font-size: 18px;
+  font-weight: normal;
+  color: color.$dark;
+  line-height: 22px;
+  margin: 0;
+}

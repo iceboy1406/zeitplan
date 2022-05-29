@@ -1,0 +1,32 @@
+@mixin container {
+    padding-left: 24px;
+    padding-right: 24px;
+    @media screen and (min-width: 640px) {
+        padding-left:28px;
+        padding-right:28px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-left:32px;
+        padding-right:32px;
+    }
+    @media screen and (min-width: 1024px) {
+        padding-left:40px;
+        padding-right:40px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-left:56px;
+        padding-right:56px;
+    }
+    @media screen and (min-width: 1400px) {
+        padding-left:96px;
+        padding-right:96px;
+    }
+    @media screen and (min-width: 1550px) {
+        padding-left:148px;
+        padding-right:148px;
+    }
+    @media screen and (min-width: 1850px) {
+        padding-left:192px;
+        padding-right:192px;
+    }
+}

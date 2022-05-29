@@ -1,0 +1,13 @@
+{
+  "name": "zeitplan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "live-server",
+    "dev": "concurrently \"npx tsc --watch\" \"live-server\" \"sass --watch src/styles/scss/index.scss src/styles/css/index.css\""
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,29 @@
+@use 'color';
+@font-face {
+  font-family: 'PatuaOne';
+  src: url('../../fonts/PatuaOne-Regular.ttf');
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../../fonts/SourceSansPro-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('../../fonts/SourceSansPro-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../fonts/Poppins-Regular.ttf');
+}
+* {
+  scroll-behavior: smooth;
+}
+html {
+  font-family: 'SourceSansPro', sans-serif;
+}
+body {
+  background: color.$white;
+  min-height: 300vh;
+}
