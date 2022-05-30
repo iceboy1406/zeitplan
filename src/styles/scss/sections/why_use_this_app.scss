@@ -98,15 +98,15 @@
             font-weight: 600;
             font-family: 'SourceSansPro';
             font-weight: 28px;
-            color: color.$black;
+            color: color.$dark;
           }
-          .description {
-            font-size: 16px;
-            font-weight: 400;
-            font-family: 'SourceSansPro';
-            font-weight: 28px;
-            color: color.$black;
-          }
+        }
+        .description {
+          font-size: 16px;
+          font-weight: 400;
+          font-family: 'SourceSansPro';
+          font-weight: 28px;
+          color: rgba(color.$dark, 0.6);
         }
       }
     }
