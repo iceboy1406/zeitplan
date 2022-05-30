@@ -1,0 +1,100 @@
+@use '../layout';
+@use '../color';
+@use '../typography';
+#price {
+  @include layout.container;
+  @include layout.section_padding_y;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background-color: rgba(color.$primary, 0.05);
+  @media screen and (min-width: 1280px) {
+      gap: 72px;
+  }
+  & > article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+  }
+  .price-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .price-list-item {
+      border-radius: 8px;
+      background: color.$white;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: fit-content;
+      @media screen and (min-width: 768px) {
+        padding: 56px 48px;
+      }
+      .title {
+        @include typography.price-title;
+      }
+      & > article {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        .price {
+          @include typography.section-title;
+        }
+        .description {
+          @include typography.section-description;
+        }
+      }
+      ul.feature-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          @include typography.section-description;
+          color: color.$dark;
+          .icon-card {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(color.$success, 0.05);
+            border-radius: 999px;
+            img {
+              display: block;
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+      .primary-button {
+        width: unset;
+        margin-top: 20px;
+      }
+    }
+  }
+  & > .message {
+      text-align: center;
+      max-width: 550px;
+      @include typography.section-description-small;
+      span {
+          font-weight: 600;
+      }
+  }
+}

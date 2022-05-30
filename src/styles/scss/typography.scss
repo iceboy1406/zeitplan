@@ -1,6 +1,5 @@
 @use 'color';
-
-.banner-title {
+@mixin banner-title {
   font-family: 'PatuaOne';
   font-size: 40px;
   font-weight: normal;
@@ -12,7 +11,7 @@
     line-height: 60px;
   }
 }
-.section-title {
+@mixin section-title {
   font-family: 'PatuaOne';
   font-size: 36px;
   font-weight: normal;
@@ -20,8 +19,7 @@
   line-height: 52px;
   margin: 0;
 }
-.section-description,
-.banner-description {
+@mixin banner-description {
   font-family: 'SourceSansPro';
   font-size: 18px;
   font-weight: normal;
@@ -29,7 +27,15 @@
   line-height: 32px;
   margin: 0;
 }
-.section-description-small {
+@mixin section-description {
+  font-family: 'SourceSansPro';
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(color.$dark, 0.5);
+  line-height: 32px;
+  margin: 0;
+}
+@mixin section-description-small {
   font-family: 'SourceSansPro';
   font-size: 16px;
   font-weight: normal;
@@ -37,11 +43,37 @@
   line-height: 32px;
   margin: 0;
 }
-.section-subtitle {
+@mixin section-subtitle {
   font-family: 'SourceSansPro';
   font-size: 18px;
   font-weight: 600;
   color: color.$dark;
   line-height: 22px;
   margin: 0;
+}
+@mixin price-title {
+  font-family: 'SourceSansPro';
+  font-size: 16px;
+  font-weight: 600;
+  color: color.$primary;
+  line-height: 18px;
+  margin: 0;
+}
+.banner-title {
+  @include banner-title;
+}
+.section-title {
+  @include section-title();
+}
+.banner-description {
+  @include banner-description();
+}
+.section-description {
+  @include section-description();
+}
+.section-description-small {
+  @include section-description-small();
+}
+.section-subtitle {
+  @include section-subtitle();
 }
