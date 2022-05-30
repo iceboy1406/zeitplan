@@ -13,8 +13,9 @@ for (const localLink of localLinks) {
     const destinationElement = document.getElementById(`${localLink?.getAttribute('href')?.replace('#', '')}`);
     localLink.addEventListener('click', function (e) {
         e.preventDefault();
-        if (destinationElement)
-            window.scrollTo(0, destinationElement.offsetTop - header.clientHeight);
+        if (destinationElement) {
+            window.scrollTo(0, destinationElement.offsetTop - header.clientHeight + 1);
+        }
     });
 }
 // Handle nav link active

@@ -16,8 +16,10 @@ for (const localLink of localLinks) {
   )
   localLink.addEventListener('click', function (e) {
     e.preventDefault()
-    if (destinationElement)
-      window.scrollTo(0, destinationElement.offsetTop - header.clientHeight)
+    if (destinationElement) {
+      window.scrollTo(0, destinationElement.offsetTop - header.clientHeight + 1)
+
+    }
   })
 }
 

@@ -7,7 +7,7 @@
   color: color.$dark;
   line-height: normal;
   margin: 0;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 60px;
   }

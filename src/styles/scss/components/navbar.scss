@@ -2,6 +2,7 @@
 @use '../color';
 header {
   @include layout.container;
+  user-select: none;
   padding-top: 24px;
   position: sticky;
   z-index: 99;
@@ -20,7 +21,7 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 40px;
+      padding: 20px 40px;
     }
     .header {
       display: flex;

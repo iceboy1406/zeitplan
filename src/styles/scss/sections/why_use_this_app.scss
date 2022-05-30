@@ -1,0 +1,114 @@
+@use '../layout';
+@use '../color';
+#why-use-this-app {
+  @include layout.container;
+  @include layout.section_padding_y;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  & > aside {
+    &.start {
+      flex-basis: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      @media screen and (min-width: 1024px) {
+        flex-basis: 33.333%;
+      }
+      & > article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      & > .app-info-list {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        .divider {
+          width: 1px;
+          height: 50px;
+          background-color: rgba(color.$dark, 0.15);
+        }
+        .app-info-list-item {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .label {
+            font-size: 14px;
+            font-family: 'SourceSansPro';
+            font-weight: 400;
+            color: rgba(color.$dark, 0.6);
+          }
+          .value {
+            font-size: 28px;
+            font-family: 'SourceSansPro';
+            font-weight: 600;
+            color: color.$dark;
+          }
+        }
+      }
+    }
+    &.end {
+      flex-basis: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 30px;
+      @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @media screen and (min-width: 1024px) {
+        flex-basis: 58.333%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .reason-list-item {
+        padding: 40px;
+        background-color: rgba(color.$primary, 0.05);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border: 1px solid transparent;
+        transition: .3s;
+        &:hover {
+            border: 1px solid rgba(color.$primary, 0.2);
+            transform: translateY(-8px);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          .icon-card {
+            padding: 12px;
+            border-radius: 6px;
+            background-color: rgba(color.$primary, 0.2);
+            width: fit-content;
+            height: fit-content;
+            img {
+              width: 24px;
+              height: 24px;
+              display: block;
+            }
+          }
+          .title {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'SourceSansPro';
+            font-weight: 28px;
+            color: color.$black;
+          }
+          .description {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'SourceSansPro';
+            font-weight: 28px;
+            color: color.$black;
+          }
+        }
+      }
+    }
+  }
+}

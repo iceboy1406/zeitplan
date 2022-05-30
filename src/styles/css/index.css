@@ -384,7 +384,7 @@ body {
   line-height: normal;
   margin: 0;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .banner-title {
     font-size: 48px;
     line-height: 60px;
@@ -431,6 +431,7 @@ body {
 header {
   padding-left: 24px;
   padding-right: 24px;
+  user-select: none;
   padding-top: 24px;
   position: sticky;
   z-index: 99;
@@ -493,7 +494,7 @@ header nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 20px 40px;
   }
 }
 header nav .header {
@@ -666,11 +667,6 @@ header nav .nav-item a.button-link:hover {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1920px) {
-  #banner {
-    padding-top: 80px;
-  }
-}
 #banner aside {
   flex-basis: 100%;
 }
@@ -710,6 +706,199 @@ header nav .nav-item a.button-link:hover {
 }
 #banner aside.end img {
   width: 100%;
+}
+
+#why-use-this-app {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 640px) {
+  #why-use-this-app {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #why-use-this-app {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #why-use-this-app {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #why-use-this-app {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #why-use-this-app {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  #why-use-this-app {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  #why-use-this-app {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+}
+@media screen and (min-width: 640px) {
+  #why-use-this-app {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #why-use-this-app {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #why-use-this-app {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #why-use-this-app {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #why-use-this-app {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #why-use-this-app {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#why-use-this-app > aside.start {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+@media screen and (min-width: 1024px) {
+  #why-use-this-app > aside.start {
+    flex-basis: 33.333%;
+  }
+}
+#why-use-this-app > aside.start > article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#why-use-this-app > aside.start > .app-info-list {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+#why-use-this-app > aside.start > .app-info-list .divider {
+  width: 1px;
+  height: 50px;
+  background-color: rgba(14, 20, 74, 0.15);
+}
+#why-use-this-app > aside.start > .app-info-list .app-info-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#why-use-this-app > aside.start > .app-info-list .app-info-list-item .label {
+  font-size: 14px;
+  font-family: "SourceSansPro";
+  font-weight: 400;
+  color: rgba(14, 20, 74, 0.6);
+}
+#why-use-this-app > aside.start > .app-info-list .app-info-list-item .value {
+  font-size: 28px;
+  font-family: "SourceSansPro";
+  font-weight: 600;
+  color: #0e144a;
+}
+#why-use-this-app > aside.end {
+  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  #why-use-this-app > aside.end {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1024px) {
+  #why-use-this-app > aside.end {
+    flex-basis: 58.333%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+#why-use-this-app > aside.end .reason-list-item {
+  padding: 40px;
+  background-color: rgba(254, 94, 68, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+#why-use-this-app > aside.end .reason-list-item:hover {
+  border: 1px solid rgba(254, 94, 68, 0.2);
+  transform: translateY(-8px);
+}
+#why-use-this-app > aside.end .reason-list-item .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#why-use-this-app > aside.end .reason-list-item .header .icon-card {
+  padding: 12px;
+  border-radius: 6px;
+  background-color: rgba(254, 94, 68, 0.2);
+  width: fit-content;
+  height: fit-content;
+}
+#why-use-this-app > aside.end .reason-list-item .header .icon-card img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+#why-use-this-app > aside.end .reason-list-item .header .title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "SourceSansPro";
+  font-weight: 28px;
+  color: #000000;
+}
+#why-use-this-app > aside.end .reason-list-item .header .description {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "SourceSansPro";
+  font-weight: 28px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=index.css.map */
