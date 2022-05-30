@@ -1,0 +1,58 @@
+@use '../color';
+@use '../layout';
+#feature {
+  @include layout.container;
+  @include layout.section_padding_y;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+  & > aside {
+    flex-basis: 100%;
+    @media screen and (min-width: 1024px) {
+      flex-basis: 50%;
+    }
+    &.start {
+      img {
+        width: 100%;
+      }
+    }
+    &.end {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      & > article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .feature-list {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 30px;
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            
+        }
+        .feature-list-item {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          & > img {
+            width: 36px;
+            height: 36px;
+          }
+          & > article {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+}

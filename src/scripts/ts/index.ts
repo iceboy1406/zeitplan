@@ -17,8 +17,8 @@ for (const localLink of localLinks) {
   localLink.addEventListener('click', function (e) {
     e.preventDefault()
     if (destinationElement) {
-      window.scrollTo(0, destinationElement.offsetTop - header.clientHeight + 1)
-
+      window.scrollTo(0, destinationElement.offsetTop - header.clientHeight)
+      console.log(destinationElement.offsetTop - header.clientHeight)
     }
   })
 }
@@ -35,10 +35,10 @@ window.addEventListener('scroll', () => {
     if (destinationElement) {
       if (
         window.scrollY >= destinationElement.offsetTop - header.clientHeight &&
-        window.scrollY <=
+        window.scrollY <
           destinationElement.offsetTop +
             destinationElement.clientHeight -
-            header.clientHeight
+            header.clientHeight - 1
       ) {
         navLink.classList.add('active')
       }
