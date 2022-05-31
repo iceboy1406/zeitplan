@@ -362,6 +362,12 @@ template {
 @font-face {
   font-family: "Poppins";
   src: url("../../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
 }
 * {
   scroll-behavior: smooth;
@@ -397,7 +403,6 @@ body {
   font-weight: normal;
   color: #0e144a;
   line-height: 52px;
-  margin: 0;
 }
 
 .banner-description {
@@ -406,7 +411,6 @@ body {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.5);
   line-height: 32px;
-  margin: 0;
 }
 
 .section-description {
@@ -415,7 +419,6 @@ body {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.5);
   line-height: 32px;
-  margin: 0;
 }
 
 .section-description-small {
@@ -424,7 +427,6 @@ body {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.6);
   line-height: 32px;
-  margin: 0;
 }
 
 .section-subtitle {
@@ -433,7 +435,6 @@ body {
   font-weight: 600;
   color: #0e144a;
   line-height: 22px;
-  margin: 0;
 }
 
 header {
@@ -466,26 +467,26 @@ header {
 }
 @media screen and (min-width: 1280px) {
   header {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
   header {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
   header {
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 192px;
+    padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
   header {
-    padding-left: 192px;
-    padding-right: 192px;
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 header nav {
@@ -648,26 +649,26 @@ header nav .nav-item a.button-link:hover {
 }
 @media screen and (min-width: 1280px) {
   #banner {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
   #banner {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
   #banner {
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 192px;
+    padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
   #banner {
-    padding-left: 192px;
-    padding-right: 192px;
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -745,26 +746,26 @@ header nav .nav-item a.button-link:hover {
 }
 @media screen and (min-width: 1280px) {
   #why-use-this-app {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
   #why-use-this-app {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
   #why-use-this-app {
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 192px;
+    padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
   #why-use-this-app {
-    padding-left: 192px;
-    padding-right: 192px;
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
@@ -938,26 +939,26 @@ header nav .nav-item a.button-link:hover {
 }
 @media screen and (min-width: 1280px) {
   #feature {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
   #feature {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
   #feature {
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 192px;
+    padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
   #feature {
-    padding-left: 192px;
-    padding-right: 192px;
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
@@ -1074,26 +1075,26 @@ header nav .nav-item a.button-link:hover {
 }
 @media screen and (min-width: 1280px) {
   #price {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
   #price {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
   #price {
-    padding-left: 148px;
-    padding-right: 148px;
+    padding-left: 192px;
+    padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
   #price {
-    padding-left: 192px;
-    padding-right: 192px;
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
@@ -1175,7 +1176,6 @@ header nav .nav-item a.button-link:hover {
   font-weight: 600;
   color: #fe5e44;
   line-height: 18px;
-  margin: 0;
 }
 #price .price-list .price-list-item > article {
   display: flex;
@@ -1188,7 +1188,6 @@ header nav .nav-item a.button-link:hover {
   font-weight: normal;
   color: #0e144a;
   line-height: 52px;
-  margin: 0;
 }
 #price .price-list .price-list-item > article .description {
   font-family: "SourceSansPro";
@@ -1196,7 +1195,6 @@ header nav .nav-item a.button-link:hover {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.5);
   line-height: 32px;
-  margin: 0;
 }
 #price .price-list .price-list-item ul.feature-list {
   list-style-type: none;
@@ -1213,7 +1211,6 @@ header nav .nav-item a.button-link:hover {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.5);
   line-height: 32px;
-  margin: 0;
   color: #0e144a;
 }
 #price .price-list .price-list-item ul.feature-list li .icon-card {
@@ -1242,10 +1239,186 @@ header nav .nav-item a.button-link:hover {
   font-weight: normal;
   color: rgba(14, 20, 74, 0.6);
   line-height: 32px;
-  margin: 0;
 }
 #price > .message span {
   font-weight: 600;
+}
+
+#testimonial {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background: rgba(254, 94, 68, 0.1);
+}
+@media screen and (min-width: 640px) {
+  #testimonial {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #testimonial {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #testimonial {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #testimonial {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #testimonial {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  #testimonial {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  #testimonial {
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+}
+@media screen and (min-width: 640px) {
+  #testimonial {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #testimonial {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #testimonial {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #testimonial {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #testimonial {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #testimonial {
+    gap: 72px;
+  }
+}
+#testimonial > article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 550px;
+  text-align: center;
+}
+#testimonial ul.testimonial-list {
+  column-count: 1;
+  gap: 30px;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  #testimonial ul.testimonial-list {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #testimonial ul.testimonial-list {
+    column-count: 3;
+  }
+}
+#testimonial ul.testimonial-list li.testimonial-list-item {
+  height: fit-content;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .star-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card {
+  background: rgba(0, 0, 0, 0.2);
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card img {
+  width: 14px;
+  display: block;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card.active {
+  background-color: #FFC93F;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .content {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  color: #0e144a;
+  line-height: 26px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .user img.avatar {
+  width: 55px;
+  height: 55px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .user > article {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .user > article .name {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 24px;
+}
+#testimonial ul.testimonial-list li.testimonial-list-item .user > article .job {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=index.css.map */

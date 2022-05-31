@@ -14,20 +14,20 @@
     padding-right: 40px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 56px;
-    padding-right: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
   @media screen and (min-width: 1400px) {
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
   @media screen and (min-width: 1550px) {
-    padding-left: 148px;
-    padding-right: 148px;
-  }
-  @media screen and (min-width: 1850px) {
     padding-left: 192px;
     padding-right: 192px;
+  }
+  @media screen and (min-width: 1850px) {
+    padding-left: 256px;
+    padding-right: 256px;
   }
 }
 @mixin section_padding_y {

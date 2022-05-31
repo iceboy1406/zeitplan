@@ -17,7 +17,6 @@
   font-weight: normal;
   color: color.$dark;
   line-height: 52px;
-  margin: 0;
 }
 @mixin banner-description {
   font-family: 'SourceSansPro';
@@ -25,7 +24,6 @@
   font-weight: normal;
   color: rgba(color.$dark, 0.5);
   line-height: 32px;
-  margin: 0;
 }
 @mixin section-description {
   font-family: 'SourceSansPro';
@@ -33,7 +31,6 @@
   font-weight: normal;
   color: rgba(color.$dark, 0.5);
   line-height: 32px;
-  margin: 0;
 }
 @mixin section-description-small {
   font-family: 'SourceSansPro';
@@ -41,7 +38,6 @@
   font-weight: normal;
   color: rgba(color.$dark, 0.6);
   line-height: 32px;
-  margin: 0;
 }
 @mixin section-subtitle {
   font-family: 'SourceSansPro';
@@ -49,7 +45,6 @@
   font-weight: 600;
   color: color.$dark;
   line-height: 22px;
-  margin: 0;
 }
 @mixin price-title {
   font-family: 'SourceSansPro';
@@ -57,8 +52,29 @@
   font-weight: 600;
   color: color.$primary;
   line-height: 18px;
-  margin: 0;
 }
+@mixin testimonial-content {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+  color: color.$dark;
+  line-height: 26px;
+}
+@mixin testimonial-person-name {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+  color: color.$black;
+  line-height: 24px;
+}
+@mixin testimonial-person-job {
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(color.$dark, 0.6);
+  line-height: 18px;
+}
+
 .banner-title {
   @include banner-title;
 }
