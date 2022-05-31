@@ -381,6 +381,12 @@ body {
   background: #ffffff;
   min-height: 300vh;
   overflow-x: hidden;
+  width: 100vw;
+}
+
+main {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .banner-title {
