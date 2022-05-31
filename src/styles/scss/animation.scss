@@ -1,0 +1,28 @@
+$aos-distance: 100px !default;
+[data-animate^='fade'][data-animate^='fade'] {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-delay: .1s;
+  transition: 0.6s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  &.animate {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+[data-animate='fade-up'] {
+  transform: translate3d(0, $aos-distance, 0);
+}
+
+[data-animate='fade-down'] {
+  transform: translate3d(0, -$aos-distance, 0);
+}
+
+[data-animate='fade-right'] {
+  transform: translate3d(-$aos-distance, 0, 0);
+}
+
+[data-animate='fade-left'] {
+  transform: translate3d($aos-distance, 0, 0);
+}

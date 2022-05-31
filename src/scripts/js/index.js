@@ -30,9 +30,26 @@ window.addEventListener('scroll', () => {
                 window.scrollY <
                     destinationElement.offsetTop +
                         destinationElement.clientHeight -
-                        header.clientHeight - 1) {
+                        header.clientHeight -
+                        1) {
                 navLink.classList.add('active');
             }
         }
     }
 });
+const animateElements = document.querySelectorAll('[data-animate]');
+window.addEventListener('DOMContentLoaded', () => animationHandler());
+window.addEventListener('scroll', () => animationHandler());
+window.addEventListener('resize', () => animationHandler());
+const animationHandler = () => {
+    for (const animateElement of animateElements) {
+        if (window.scrollY + document.documentElement.clientHeight >
+            animateElement.offsetTop + header.clientHeight) {
+            animateElement.classList.add('animate');
+        }
+        if (window.scrollY + document.documentElement.clientHeight <
+            animateElement.offsetTop + 125) {
+            animateElement.classList.remove('animate');
+        }
+    }
+};

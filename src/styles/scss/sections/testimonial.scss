@@ -39,6 +39,7 @@ section#testimonial {
       flex-direction: column;
       gap: 20px;
       margin-bottom: 30px;
+      transition-delay: .2s;
       .star-list {
         display: flex;
         align-items: center;
