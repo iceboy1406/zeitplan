@@ -1,6 +1,6 @@
 @use '../layout';
 @use '../color';
-#why-use-this-app {
+section#why-use-this-app {
   @include layout.container;
   @include layout.section_padding_y;
   display: flex;

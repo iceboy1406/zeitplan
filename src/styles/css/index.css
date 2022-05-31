@@ -589,6 +589,200 @@ header nav .nav-item a.button-link:hover {
   background-color: #fe482b;
 }
 
+footer {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 640px) {
+  footer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  footer {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  footer {
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+}
+@media screen and (min-width: 640px) {
+  footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    gap: 72px;
+  }
+}
+footer .about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  footer .about {
+    flex-basis: 41.666%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .about {
+    max-width: 450px;
+  }
+}
+footer .about > img {
+  height: 36px;
+  width: fit-content;
+}
+footer .about .description {
+  font-family: "SourceSansPro";
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 26px;
+}
+footer .about .copyright {
+  font-family: "SourceSansPro";
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 18px;
+}
+footer .footer-item-list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-item-list {
+    gap: 96px;
+  }
+}
+footer .footer-item-list .footer-item-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-item-list .footer-item-list-item .title {
+  font-family: "PatuaOne";
+  font-size: 18px;
+  font-weight: 400;
+  color: #0e144a;
+  line-height: 22px;
+}
+footer .footer-item-list .footer-item-list-item .footer-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-item-list .footer-item-list-item .footer-link-list .footer-link {
+  font-family: "SourceSansPro";
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 26px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .social-media > article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .social-media > article .title {
+  font-family: "PatuaOne";
+  font-size: 18px;
+  font-weight: 400;
+  color: #0e144a;
+  line-height: 22px;
+}
+footer .social-media > article .description {
+  font-family: "SourceSansPro";
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 26px;
+}
+footer .social-media .social-media-list {
+  display: flex;
+  gap: 10px;
+}
+footer .social-media .social-media-list .icon-card {
+  padding: 10px;
+  background: rgba(254, 94, 68, 0.05);
+  border-radius: 50%;
+  width: fit-content;
+}
+footer .social-media .social-media-list .icon-card img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
 .primary-button {
   text-align: center;
   display: block;
@@ -620,7 +814,7 @@ header nav .nav-item a.button-link:hover {
   background-color: rgba(254, 94, 68, 0.25);
 }
 
-#banner {
+section#banner {
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -630,94 +824,94 @@ header nav .nav-item a.button-link:hover {
   gap: 60px;
 }
 @media screen and (min-width: 640px) {
-  #banner {
+  section#banner {
     padding-left: 28px;
     padding-right: 28px;
   }
 }
 @media screen and (min-width: 768px) {
-  #banner {
+  section#banner {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #banner {
+  section#banner {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #banner {
+  section#banner {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #banner {
+  section#banner {
     padding-left: 108px;
     padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
-  #banner {
+  section#banner {
     padding-left: 192px;
     padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
-  #banner {
+  section#banner {
     padding-left: 256px;
     padding-right: 256px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #banner {
+  section#banner {
     flex-direction: row;
   }
 }
-#banner aside {
+section#banner aside {
   flex-basis: 100%;
 }
 @media screen and (min-width: 1024px) {
-  #banner aside {
+  section#banner aside {
     flex-basis: 50%;
   }
 }
-#banner aside.start {
+section#banner aside.start {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-#banner aside.start article {
+section#banner aside.start article {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-#banner aside.start .button-group {
+section#banner aside.start .button-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-#banner aside.start .button-group button, #banner aside.start .button-group a {
+section#banner aside.start .button-group button, section#banner aside.start .button-group a {
   width: unset;
 }
 @media screen and (min-width: 1024px) {
-  #banner aside.start .button-group {
+  section#banner aside.start .button-group {
     flex-direction: row;
   }
-  #banner aside.start .button-group button, #banner aside.start .button-group a {
+  section#banner aside.start .button-group button, section#banner aside.start .button-group a {
     width: fit-content;
   }
 }
-#banner aside.end {
+section#banner aside.end {
   position: relative;
 }
-#banner aside.end img {
+section#banner aside.end img {
   width: 100%;
 }
 
-#why-use-this-app {
+section#why-use-this-app {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 36px;
@@ -727,144 +921,144 @@ header nav .nav-item a.button-link:hover {
   gap: 32px;
 }
 @media screen and (min-width: 640px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 28px;
     padding-right: 28px;
   }
 }
 @media screen and (min-width: 768px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 108px;
     padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 192px;
     padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-left: 256px;
     padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #why-use-this-app {
+  section#why-use-this-app {
     flex-direction: row;
     justify-content: space-between;
   }
 }
-#why-use-this-app > aside.start {
+section#why-use-this-app > aside.start {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
   gap: 56px;
 }
 @media screen and (min-width: 1024px) {
-  #why-use-this-app > aside.start {
+  section#why-use-this-app > aside.start {
     flex-basis: 33.333%;
   }
 }
-#why-use-this-app > aside.start > article {
+section#why-use-this-app > aside.start > article {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#why-use-this-app > aside.start > .app-info-list {
+section#why-use-this-app > aside.start > .app-info-list {
   display: flex;
   gap: 36px;
   align-items: center;
 }
-#why-use-this-app > aside.start > .app-info-list .divider {
+section#why-use-this-app > aside.start > .app-info-list .divider {
   width: 1px;
   height: 50px;
   background-color: rgba(14, 20, 74, 0.15);
 }
-#why-use-this-app > aside.start > .app-info-list .app-info-list-item {
+section#why-use-this-app > aside.start > .app-info-list .app-info-list-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-#why-use-this-app > aside.start > .app-info-list .app-info-list-item .label {
+section#why-use-this-app > aside.start > .app-info-list .app-info-list-item .label {
   font-size: 14px;
   font-family: "SourceSansPro";
   font-weight: 400;
   color: rgba(14, 20, 74, 0.6);
 }
-#why-use-this-app > aside.start > .app-info-list .app-info-list-item .value {
+section#why-use-this-app > aside.start > .app-info-list .app-info-list-item .value {
   font-size: 28px;
   font-family: "SourceSansPro";
   font-weight: 600;
   color: #0e144a;
 }
-#why-use-this-app > aside.end {
+section#why-use-this-app > aside.end {
   flex-basis: 100%;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
-  #why-use-this-app > aside.end {
+  section#why-use-this-app > aside.end {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 1024px) {
-  #why-use-this-app > aside.end {
+  section#why-use-this-app > aside.end {
     flex-basis: 58.333%;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-#why-use-this-app > aside.end .reason-list-item {
+section#why-use-this-app > aside.end .reason-list-item {
   padding: 40px;
   background-color: rgba(254, 94, 68, 0.05);
   border-radius: 8px;
@@ -874,35 +1068,35 @@ header nav .nav-item a.button-link:hover {
   border: 1px solid transparent;
   transition: 0.3s;
 }
-#why-use-this-app > aside.end .reason-list-item:hover {
+section#why-use-this-app > aside.end .reason-list-item:hover {
   border: 1px solid rgba(254, 94, 68, 0.2);
   transform: translateY(-8px);
 }
-#why-use-this-app > aside.end .reason-list-item .header {
+section#why-use-this-app > aside.end .reason-list-item .header {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#why-use-this-app > aside.end .reason-list-item .header .icon-card {
+section#why-use-this-app > aside.end .reason-list-item .header .icon-card {
   padding: 12px;
   border-radius: 6px;
   background-color: rgba(254, 94, 68, 0.2);
   width: fit-content;
   height: fit-content;
 }
-#why-use-this-app > aside.end .reason-list-item .header .icon-card img {
+section#why-use-this-app > aside.end .reason-list-item .header .icon-card img {
   width: 24px;
   height: 24px;
   display: block;
 }
-#why-use-this-app > aside.end .reason-list-item .header .title {
+section#why-use-this-app > aside.end .reason-list-item .header .title {
   font-size: 18px;
   font-weight: 600;
   font-family: "SourceSansPro";
   font-weight: 28px;
   color: #0e144a;
 }
-#why-use-this-app > aside.end .reason-list-item .description {
+section#why-use-this-app > aside.end .reason-list-item .description {
   font-size: 16px;
   font-weight: 400;
   font-family: "SourceSansPro";
@@ -910,7 +1104,7 @@ header nav .nav-item a.button-link:hover {
   color: rgba(14, 20, 74, 0.6);
 }
 
-#feature {
+section#feature {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 36px;
@@ -920,131 +1114,131 @@ header nav .nav-item a.button-link:hover {
   gap: 30px;
 }
 @media screen and (min-width: 640px) {
-  #feature {
+  section#feature {
     padding-left: 28px;
     padding-right: 28px;
   }
 }
 @media screen and (min-width: 768px) {
-  #feature {
+  section#feature {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #feature {
+  section#feature {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #feature {
+  section#feature {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #feature {
+  section#feature {
     padding-left: 108px;
     padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
-  #feature {
+  section#feature {
     padding-left: 192px;
     padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
-  #feature {
+  section#feature {
     padding-left: 256px;
     padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
-  #feature {
+  section#feature {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) {
-  #feature {
+  section#feature {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #feature {
+  section#feature {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #feature {
+  section#feature {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #feature {
+  section#feature {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #feature {
+  section#feature {
     flex-direction: row;
     align-items: center;
     gap: 48px;
   }
 }
-#feature > aside {
+section#feature > aside {
   flex-basis: 100%;
 }
 @media screen and (min-width: 1024px) {
-  #feature > aside {
+  section#feature > aside {
     flex-basis: 50%;
   }
 }
-#feature > aside.start img {
+section#feature > aside.start img {
   width: 100%;
 }
-#feature > aside.end {
+section#feature > aside.end {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-#feature > aside.end > article {
+section#feature > aside.end > article {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-#feature > aside.end .feature-list {
+section#feature > aside.end .feature-list {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
-  #feature > aside.end .feature-list {
+  section#feature > aside.end .feature-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-#feature > aside.end .feature-list .feature-list-item {
+section#feature > aside.end .feature-list .feature-list-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#feature > aside.end .feature-list .feature-list-item > img {
+section#feature > aside.end .feature-list .feature-list-item > img {
   width: 36px;
   height: 36px;
 }
-#feature > aside.end .feature-list .feature-list-item > article {
+section#feature > aside.end .feature-list .feature-list-item > article {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#price {
+section#price {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 36px;
@@ -1056,83 +1250,83 @@ header nav .nav-item a.button-link:hover {
   background-color: rgba(254, 94, 68, 0.05);
 }
 @media screen and (min-width: 640px) {
-  #price {
+  section#price {
     padding-left: 28px;
     padding-right: 28px;
   }
 }
 @media screen and (min-width: 768px) {
-  #price {
+  section#price {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #price {
+  section#price {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #price {
+  section#price {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #price {
+  section#price {
     padding-left: 108px;
     padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
-  #price {
+  section#price {
     padding-left: 192px;
     padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
-  #price {
+  section#price {
     padding-left: 256px;
     padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
-  #price {
+  section#price {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) {
-  #price {
+  section#price {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #price {
+  section#price {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #price {
+  section#price {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #price {
+  section#price {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #price {
+  section#price {
     gap: 72px;
   }
 }
-#price > article {
+section#price > article {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1140,23 +1334,23 @@ header nav .nav-item a.button-link:hover {
   width: 100%;
   max-width: 550px;
 }
-#price .price-list {
+section#price .price-list {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
-  #price .price-list {
+  section#price .price-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 1280px) {
-  #price .price-list {
+  section#price .price-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-#price .price-list .price-list-item {
+section#price .price-list .price-list-item {
   border-radius: 8px;
   background: #ffffff;
   padding: 32px 28px;
@@ -1166,43 +1360,43 @@ header nav .nav-item a.button-link:hover {
   height: fit-content;
 }
 @media screen and (min-width: 768px) {
-  #price .price-list .price-list-item {
+  section#price .price-list .price-list-item {
     padding: 56px 48px;
   }
 }
-#price .price-list .price-list-item .title {
+section#price .price-list .price-list-item .title {
   font-family: "SourceSansPro";
   font-size: 16px;
   font-weight: 600;
   color: #fe5e44;
   line-height: 18px;
 }
-#price .price-list .price-list-item > article {
+section#price .price-list .price-list-item > article {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-#price .price-list .price-list-item > article .price {
+section#price .price-list .price-list-item > article .price {
   font-family: "PatuaOne";
   font-size: 36px;
   font-weight: normal;
   color: #0e144a;
   line-height: 52px;
 }
-#price .price-list .price-list-item > article .description {
+section#price .price-list .price-list-item > article .description {
   font-family: "SourceSansPro";
   font-size: 18px;
   font-weight: normal;
   color: rgba(14, 20, 74, 0.5);
   line-height: 32px;
 }
-#price .price-list .price-list-item ul.feature-list {
+section#price .price-list .price-list-item ul.feature-list {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#price .price-list .price-list-item ul.feature-list li {
+section#price .price-list .price-list-item ul.feature-list li {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1213,7 +1407,7 @@ header nav .nav-item a.button-link:hover {
   line-height: 32px;
   color: #0e144a;
 }
-#price .price-list .price-list-item ul.feature-list li .icon-card {
+section#price .price-list .price-list-item ul.feature-list li .icon-card {
   width: 24px;
   height: 24px;
   display: flex;
@@ -1222,16 +1416,16 @@ header nav .nav-item a.button-link:hover {
   background: rgba(40, 240, 157, 0.05);
   border-radius: 999px;
 }
-#price .price-list .price-list-item ul.feature-list li .icon-card img {
+section#price .price-list .price-list-item ul.feature-list li .icon-card img {
   display: block;
   width: 16px;
   height: 16px;
 }
-#price .price-list .price-list-item .primary-button {
+section#price .price-list .price-list-item .primary-button {
   width: unset;
   margin-top: 20px;
 }
-#price > .message {
+section#price > .message {
   text-align: center;
   max-width: 550px;
   font-family: "SourceSansPro";
@@ -1240,11 +1434,11 @@ header nav .nav-item a.button-link:hover {
   color: rgba(14, 20, 74, 0.6);
   line-height: 32px;
 }
-#price > .message span {
+section#price > .message span {
   font-weight: 600;
 }
 
-#testimonial {
+section#testimonial {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 36px;
@@ -1256,105 +1450,105 @@ header nav .nav-item a.button-link:hover {
   background: rgba(254, 94, 68, 0.1);
 }
 @media screen and (min-width: 640px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 28px;
     padding-right: 28px;
   }
 }
 @media screen and (min-width: 768px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 108px;
     padding-right: 108px;
   }
 }
 @media screen and (min-width: 1550px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 192px;
     padding-right: 192px;
   }
 }
 @media screen and (min-width: 1850px) {
-  #testimonial {
+  section#testimonial {
     padding-left: 256px;
     padding-right: 256px;
   }
 }
 @media screen and (min-width: 640px) {
-  #testimonial {
+  section#testimonial {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 768px) {
-  #testimonial {
+  section#testimonial {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1024px) {
-  #testimonial {
+  section#testimonial {
     padding-top: 72px;
     padding-bottom: 72px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #testimonial {
+  section#testimonial {
     padding-top: 90px;
     padding-bottom: 90px;
   }
 }
 @media screen and (min-width: 1400px) {
-  #testimonial {
+  section#testimonial {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
-  #testimonial {
+  section#testimonial {
     gap: 72px;
   }
 }
-#testimonial > article {
+section#testimonial > article {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 550px;
   text-align: center;
 }
-#testimonial ul.testimonial-list {
+section#testimonial ul.testimonial-list {
   column-count: 1;
   gap: 30px;
   list-style-type: none;
 }
 @media screen and (min-width: 768px) {
-  #testimonial ul.testimonial-list {
+  section#testimonial ul.testimonial-list {
     column-count: 2;
   }
 }
 @media screen and (min-width: 1024px) {
-  #testimonial ul.testimonial-list {
+  section#testimonial ul.testimonial-list {
     column-count: 3;
   }
 }
-#testimonial ul.testimonial-list li.testimonial-list-item {
+section#testimonial ul.testimonial-list li.testimonial-list-item {
   height: fit-content;
   padding: 30px;
   background: #ffffff;
@@ -1364,12 +1558,12 @@ header nav .nav-item a.button-link:hover {
   gap: 20px;
   margin-bottom: 30px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .star-list {
+section#testimonial ul.testimonial-list li.testimonial-list-item .star-list {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card {
+section#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card {
   background: rgba(0, 0, 0, 0.2);
   width: 24px;
   height: 24px;
@@ -1378,47 +1572,209 @@ header nav .nav-item a.button-link:hover {
   justify-content: center;
   align-items: center;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card img {
+section#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card img {
   width: 14px;
   display: block;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card.active {
+section#testimonial ul.testimonial-list li.testimonial-list-item .star-list .star-card.active {
   background-color: #FFC93F;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .content {
+section#testimonial ul.testimonial-list li.testimonial-list-item .content {
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 400;
   color: #0e144a;
   line-height: 26px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .user {
+section#testimonial ul.testimonial-list li.testimonial-list-item .user {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .user img.avatar {
+section#testimonial ul.testimonial-list li.testimonial-list-item .user img.avatar {
   width: 55px;
   height: 55px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .user > article {
+section#testimonial ul.testimonial-list li.testimonial-list-item .user > article {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .user > article .name {
+section#testimonial ul.testimonial-list li.testimonial-list-item .user > article .name {
   font-family: "Poppins";
   font-size: 18px;
   font-weight: 500;
   color: #000000;
   line-height: 24px;
 }
-#testimonial ul.testimonial-list li.testimonial-list-item .user > article .job {
+section#testimonial ul.testimonial-list li.testimonial-list-item .user > article .job {
   font-family: "Poppins";
   font-size: 12px;
   font-weight: 500;
   color: rgba(14, 20, 74, 0.6);
   line-height: 18px;
+}
+
+section#download-now {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 640px) {
+  section#download-now {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#download-now {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#download-now {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section#download-now {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section#download-now {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  section#download-now {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  section#download-now {
+    padding-left: 256px;
+    padding-right: 256px;
+  }
+}
+@media screen and (min-width: 640px) {
+  section#download-now {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#download-now {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section#download-now {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section#download-now {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  section#download-now {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section#download-now {
+    flex-direction: row;
+  }
+}
+section#download-now > aside {
+  flex-basis: 100%;
+}
+@media screen and (min-width: 1280px) {
+  section#download-now > aside {
+    flex-basis: 50%;
+  }
+}
+section#download-now > aside.start {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  section#download-now > aside.start {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+section#download-now > aside.start > article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 761px;
+}
+section#download-now > aside.start .button-link-group {
+  display: flex;
+  gap: 16px;
+}
+section#download-now > aside.start .button-link-group img {
+  height: 45px;
+}
+section#download-now > aside.end {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 30px rgba(14, 20, 74, 0.05);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section#download-now > aside.end .biodata {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+section#download-now > aside.end .biodata .name {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 24px;
+}
+section#download-now > aside.end .biodata .job {
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(14, 20, 74, 0.6);
+  line-height: 18px;
+}
+section#download-now > aside.end .biodata img {
+  width: 55px;
+  height: 55px;
+  display: block;
+}
+section#download-now > aside.end .description {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  color: #0e144a;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=index.css.map */

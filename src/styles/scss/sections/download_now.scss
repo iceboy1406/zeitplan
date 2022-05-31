@@ -1,0 +1,72 @@
+@use '../color';
+@use '../typography';
+@use '../layout';
+section#download-now {
+  @include layout.container;
+  @include layout.section_padding_y;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
+  & > aside {
+    flex-basis: 100%;
+    @media screen and (min-width: 1280px) {
+      flex-basis: 50%;
+    }
+    &.start {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+      align-items: center;
+      @media screen and (min-width: 1280px) {
+        text-align: left;
+        align-items: flex-start;
+      }
+      & > article {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 761px;
+      }
+      .button-link-group {
+        display: flex;
+        gap: 16px;
+        img {
+          height: 45px;
+        }
+      }
+    }
+    &.end {
+      background-color: color.$white;
+      box-shadow: 0px 15px 30px rgba(color.$dark, 0.05);
+      padding: 30px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .biodata {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .name {
+          @include typography.testimonial-person-name;
+        }
+        .job {
+          @include typography.testimonial-person-job;
+        }
+        img {
+          width: 55px;
+          height: 55px;
+          display: block;
+        }
+      }
+      .description {
+        @include typography.testimonial-content;
+      }
+    }
+  }
+}

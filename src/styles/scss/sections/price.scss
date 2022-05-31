@@ -1,7 +1,7 @@
 @use '../layout';
 @use '../color';
 @use '../typography';
-#price {
+section#price {
   @include layout.container;
   @include layout.section_padding_y;
   display: flex;

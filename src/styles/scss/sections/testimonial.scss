@@ -1,7 +1,7 @@
 @use '../color';
 @use '../typography';
 @use '../layout';
-#testimonial {
+section#testimonial {
   @include layout.container;
   @include layout.section_padding_y;
   display: flex;

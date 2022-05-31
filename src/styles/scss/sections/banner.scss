@@ -1,6 +1,6 @@
 @use '../color';
 @use '../layout';
-#banner {
+section#banner {
   @include layout.container;
   display: flex;
   flex-direction: column;

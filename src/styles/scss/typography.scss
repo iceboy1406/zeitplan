@@ -74,6 +74,34 @@
   color: rgba(color.$dark, 0.6);
   line-height: 18px;
 }
+@mixin footer-copyright {
+  font-family: 'SourceSansPro';
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(color.$dark, 0.6);
+  line-height: 18px;
+}
+@mixin footer-title {
+  font-family: 'PatuaOne';
+  font-size: 18px;
+  font-weight: 400;
+  color: color.$dark;
+  line-height: 22px;
+}
+@mixin footer-description {
+  font-family: 'SourceSansPro';
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(color.$dark, 0.6);
+  line-height: 26px;
+}
+@mixin footer-link {
+  font-family: 'SourceSansPro';
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(color.$dark, 0.6);
+  line-height: 26px;
+}
 
 .banner-title {
   @include banner-title;

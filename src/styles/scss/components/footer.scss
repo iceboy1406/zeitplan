@@ -1,0 +1,90 @@
+@use '../layout';
+@use '../color';
+@use '../typography';
+footer {
+  @include layout.container;
+  @include layout.section_padding_y;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 72px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: 768px) {
+      flex-basis: 41.666%;
+    }
+    @media screen and (min-width: 1024px) {
+      max-width: 450px;
+    }
+    & > img {
+      height: 36px;
+      width: fit-content;
+    }
+    .description {
+      @include typography.footer-description;
+    }
+    .copyright {
+      @include typography.footer-copyright;
+    }
+  }
+  .footer-item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    @media screen and (min-width: 768px) {
+      gap: 96px;
+    }
+    .footer-item-list-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .title {
+        @include typography.footer-title;
+      }
+      .footer-link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .footer-link {
+          @include typography.footer-link;
+        }
+      }
+    }
+  }
+  .social-media {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    & > article {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .title {
+        @include typography.footer-title;
+      }
+      .description {
+        @include typography.footer-description;
+      }
+    }
+    .social-media-list {
+        display: flex;
+        gap: 10px;
+        .icon-card {
+            padding: 10px;
+            background: rgba(color.$primary, 0.05);
+            border-radius: 50%;
+            width: fit-content;
+            img {
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+  }
+}
