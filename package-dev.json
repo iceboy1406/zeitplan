@@ -1,6 +1,6 @@
 // rename this file name to package.json if you need to use npm script
-// I renamte this file to avoid error while deploy vercel
-// because i want to deploye as static html
+// I rename this file to avoid error while deploy to vercel
+// because i want to deploy as static html
 {
   "name": "zeitplan",
   "version": "1.0.0",
