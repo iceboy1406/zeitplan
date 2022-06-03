@@ -1,0 +1,20 @@
+// rename this file name to package.json if you need to use npm script
+// I renamte this file to avoid error while deploy vercel
+// because i want to deploye as static html
+{
+  "name": "zeitplan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tsc --watch\" \"npm run start\" \"sass --watch src/styles/scss/index.scss src/styles/css/index.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "live-server": "^1.2.2",
+    "sass": "^1.52.2",
+    "typescript": "^4.7.2"
+  }
+}
