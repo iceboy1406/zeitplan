@@ -1,6 +1,6 @@
 @use 'color';
 @mixin banner-title {
-  font-family: 'PatuaOne';
+  font-family: 'Patua One';
   font-size: 40px;
   font-weight: normal;
   color: color.$dark;
@@ -12,42 +12,42 @@
   }
 }
 @mixin section-title {
-  font-family: 'PatuaOne';
+  font-family: 'Patua One';
   font-size: 36px;
   font-weight: normal;
   color: color.$dark;
   line-height: 52px;
 }
 @mixin banner-description {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 18px;
   font-weight: normal;
   color: rgba(color.$dark, 0.5);
   line-height: 32px;
 }
 @mixin section-description {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 18px;
   font-weight: normal;
   color: rgba(color.$dark, 0.5);
   line-height: 32px;
 }
 @mixin section-description-small {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
   font-weight: normal;
   color: rgba(color.$dark, 0.6);
   line-height: 32px;
 }
 @mixin section-subtitle {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 18px;
   font-weight: 600;
   color: color.$dark;
   line-height: 22px;
 }
 @mixin price-title {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
   font-weight: 600;
   color: color.$primary;
@@ -75,28 +75,28 @@
   line-height: 18px;
 }
 @mixin footer-copyright {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 14px;
   font-weight: 600;
   color: rgba(color.$dark, 0.6);
   line-height: 18px;
 }
 @mixin footer-title {
-  font-family: 'PatuaOne';
+  font-family: 'Patua One';
   font-size: 18px;
   font-weight: 400;
   color: color.$dark;
   line-height: 22px;
 }
 @mixin footer-description {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
   font-weight: normal;
   color: rgba(color.$dark, 0.6);
   line-height: 26px;
 }
 @mixin footer-link {
-  font-family: 'SourceSansPro';
+  font-family: 'Source Sans Pro';
   font-size: 16px;
   font-weight: 600;
   color: rgba(color.$dark, 0.6);
