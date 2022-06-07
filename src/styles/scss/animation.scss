@@ -2,8 +2,8 @@ $aos-distance: 100px !default;
 [data-animate^='fade'][data-animate^='fade'] {
   opacity: 0;
   transition-property: opacity, transform;
-  transition-delay: .1s;
-  transition: 0.6s;
+  transition-delay: .2s;
+  transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   &.animate {
     opacity: 1;

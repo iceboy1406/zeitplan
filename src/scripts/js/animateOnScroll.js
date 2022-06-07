@@ -7,7 +7,7 @@ const animateOnScroll = () => {
             animateElement.classList.add('animate');
         }
         if (window.scrollY + document.documentElement.clientHeight <
-            animateElement.offsetTop + 125) {
+            animateElement.offsetTop + Math.min(125, animateElement.clientHeight / 3)) {
             animateElement.classList.remove('animate');
         }
     }
