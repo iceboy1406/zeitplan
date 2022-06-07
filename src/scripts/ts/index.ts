@@ -1,4 +1,4 @@
-import toggleNavbarHandler from "./scrollToDestinationHandler.js"
+import toggleNavbarHandler from "./toggleNavbarHandler.js"
 import activeNavLinkHandler from "./activeNavLinkHandler.js"
 import scrollToDestinationHandler from "./scrollToDestinationHandler.js"
 import animateOnScroll from "./animateOnScroll.js" 
